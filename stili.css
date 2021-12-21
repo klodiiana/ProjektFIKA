@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 :root{
     --light-cream: #b6865f;
@@ -11,11 +12,11 @@
     --border: .1rem solid rgba(0,0,0,.1);
     --border-hover: .1rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-
 }
 
 *{
     font-family: 'Poppins', sans-serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,7 +58,7 @@ html{
     background: #fff;
     display: flex;
     align-items: center;
-    border-radius: .5rem;
+    border-radius: 2rem;
 }
 
 .header .header-1 .search-form input{
@@ -100,3 +101,72 @@ html{
 .header .header-2{
     background: var(--header-color1);
 }
+
+.header .header-2 .nav-bar{
+    text-align: center;
+}
+
+.header .header-2 .nav-bar a{
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .nav-bar a:hover{
+    background: var(--header-color2);
+}
+
+.header .header-2.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.bottom-navbar{
+    text-align: center;
+    background: var(--header-color2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbar a{
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.bottom-navbar a:hover{
+    background: var(--dark-color);
+}
+
+.content img{
+    width: 50%;
+    height: auto;
+}
+
+.section-h1{
+    float: right;
+    width: 50%;
+}
+
+.section-h1 h1{
+    text-align: center;
+    margin-top: 25%;
+    font-size: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.section-h1 p{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
