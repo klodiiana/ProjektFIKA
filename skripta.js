@@ -1,5 +1,14 @@
-searchForm = document.querySelector('.search-form');
+var searchForm = document.querySelector('.search-form');
 
-document.querySelector('#search-btn').onclick = () =>{
+searchForm.onclick = () => {
     searchForm.classList.toggle('active');
 }
+
+new Swiper('.home-slider', {
+    loop: true,
+    effect: "fade",
+    autoplay: {
+        delay: 2000
+    },
+    speed: 1000
+});
