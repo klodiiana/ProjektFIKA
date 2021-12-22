@@ -195,10 +195,98 @@
  
  .about-wrapper p {
      text-align: center;
-     width: 400px;
+     width: 600px;
+     height: 6px;
      margin: 0 auto;
      padding-top: 20px;
  }
+
+ .line{
+     position: absolute;
+     top: 141px;
+     bottom: 0;
+     right: 5%;
+     width: 2px;
+     background: rgba(0, 0, 0);
+ }
+
+ .line-2{
+    position: absolute;
+    top:141px;
+    bottom: 0;
+    right: 5%;
+    width: 2px;
+    height: 168vh;
+    background: rgba(0, 0, 0);
+}
+
+ /* what we offer*/
+ .services{
+     width: 100%;
+     height: 100vh;
+     padding: 0 8%;
+     color: #5f3725;
+ }
+
+ .services h1{
+     padding-top: 10%;
+     margin-bottom: 60PX;
+    font-size: 50px !important;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+ }
+
+ .title-wwo h1{
+    font-size: 50px !important;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+ }
+
+ .row{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-gap: 30px;
+ }
+
+ .whatweoffer{
+     text-align: center;
+     padding: 25px 10px;
+     border-radius: 5px;
+     font-size: 14px;
+     cursor: pointer;
+     background: transparent;
+     transition: transform 0.5s, background 0.5s;
+     border-top: 2px solid var(--header-color2);
+     border-bottom: 2px solid var(--header-color2);
+ }
+
+ .whatweoffer i{
+     font-size: 40px;
+     margin-bottom: 10px;
+     color: var(--light-cream);
+ }
+
+ .whatweoffer h2{
+     font-weight: 600;
+     margin-bottom: 8px;
+ }
+
+ .whatweoffer:hover{
+     background: var(--dark-cream);
+     color: #fff;
+     transform: scale(1.05);
+ }
+
+ .whatweoffer:hover i{
+     color: #fff;
+ }
+
+ /*============================*/
+
+
+
+
+
  /*menu*/
  
  .section-1 {
