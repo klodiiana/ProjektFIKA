@@ -200,8 +200,8 @@
      margin: 0 auto;
      padding-top: 20px;
  }
-
- .line{
+ 
+ .line {
      position: absolute;
      top: 141px;
      bottom: 0;
@@ -209,46 +209,46 @@
      width: 2px;
      background: rgba(0, 0, 0);
  }
-
- .line-2{
-    position: absolute;
-    top:141px;
-    bottom: 0;
-    right: 5%;
-    width: 2px;
-    height: 168vh;
-    background: rgba(0, 0, 0);
-}
-
+ 
+ .line-2 {
+     position: absolute;
+     top: 141px;
+     bottom: 0;
+     right: 5%;
+     width: 2px;
+     height: 168vh;
+     background: rgba(0, 0, 0);
+ }
  /* what we offer*/
- .services{
+ 
+ .services {
      width: 100%;
      height: 100vh;
      padding: 0 8%;
      color: #5f3725;
  }
-
- .services h1{
+ 
+ .services h1 {
      padding-top: 10%;
      margin-bottom: 60PX;
-    font-size: 50px !important;
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 50px !important;
+     text-align: center;
+     font-family: 'Open Sans Condensed', sans-serif;
  }
-
- .title-wwo h1{
-    font-size: 50px !important;
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+ 
+ .title-wwo h1 {
+     font-size: 50px !important;
+     text-align: center;
+     font-family: 'Open Sans Condensed', sans-serif;
  }
-
- .row{
+ 
+ .row {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
      grid-gap: 30px;
  }
-
- .whatweoffer{
+ 
+ .whatweoffer {
      text-align: center;
      padding: 25px 10px;
      border-radius: 5px;
@@ -259,45 +259,48 @@
      border-top: 2px solid var(--header-color2);
      border-bottom: 2px solid var(--header-color2);
  }
-
- .whatweoffer i{
+ 
+ .whatweoffer i {
      font-size: 40px;
      margin-bottom: 10px;
      color: var(--light-cream);
  }
-
- .whatweoffer h2{
+ 
+ .whatweoffer h2 {
      font-weight: 600;
      margin-bottom: 8px;
  }
-
- .whatweoffer:hover{
+ 
+ .whatweoffer:hover {
      background: var(--dark-cream);
      color: #fff;
      transform: scale(1.05);
  }
-
- .whatweoffer:hover i{
+ 
+ .whatweoffer:hover i {
      color: #fff;
  }
-
  /*============================*/
-
-
-
-
-
  /*menu*/
  
  .section-1 {
      margin: 0;
      padding: 0;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-image: url(/images/background.jpg.jpg);
+     background-attachment: fixed;
  }
  
  .menu-wrap {
-     margin-top: 30px;
      position: relative;
      color: #5f3725;
+ }
+ 
+ .title {
+     background-color: white;
+     margin-top: 30px;
  }
  
  .title h1 {
@@ -311,12 +314,14 @@
      font-size: 25px;
      text-align: center;
      font-family: 'Open Sans Condensed', sans-serif;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     border-top: 2px dotted var(--header-color2);
  }
  
  .drinks {
      margin-top: 50px;
      align-items: center;
-     border-top: 2px solid var(--header-color2);
      padding-top: 50px;
  }
  
@@ -333,6 +338,7 @@
      margin: 0 auto;
      border-radius: 16px;
      margin-top: 20px;
+     background-color: var(--light-grey);
  }
  
  .hot-drinks span {
@@ -343,6 +349,7 @@
  .font {
      font-weight: bold;
      font-family: 'Open Sans Condensed', sans-serif;
+     color: white;
  }
  
  .hot-drinks ul {
