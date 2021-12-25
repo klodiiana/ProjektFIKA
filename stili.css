@@ -522,16 +522,40 @@
  .info {
      display: flexbox;
      margin-left: 30px;
+     margin-right: 30px;
  }
  
  .info1 {
      padding-top: 20px;
  }
  
+ .info1 a {
+     color: #332e29;
+     margin-right: 10px;
+     padding-right: 6px;
+     border-right: 1px solid var(--header-color2);
+ }
+ 
+ .aa {
+     margin-top: 20px !important;
+     margin-bottom: 10px;
+ }
+ 
  .info span {
      color: #5f3725;
      font-weight: bolder;
-     margin-bottom: 20px;
+     margin-bottom: 40px;
      border-bottom: 1px solid #5f3725;
+ }
+ 
+ .info1 p {
+     margin-top: 20px;
+     margin-bottom: 10px;
+ }
+ 
+ #map {
+     border: 0;
+     margin-right: 0 auto;
+     border: 1px solid var(--header-color2);
  }
  /*contact us*/
