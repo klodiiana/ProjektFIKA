@@ -14,6 +14,7 @@ document.querySelector('#close-login-btn').onclick = () => {
   loginForm.classList.remove('active');
 }
 
+
 new Swiper('.home-slider', {
     loop: true,
     effect: "fade",

@@ -502,21 +502,21 @@
      flex: 1 1 42rem;
  }
  
- .top-part .row-2 .books-slider {
+ .top-part .row-2 .books-slider-2 {
      flex: 1 1 42rem;
      text-align: center;
      margin-top: 2rem;
  }
  
- .top-part .row-2 .books-slider a img {
+ .top-part .row-2 .books-slider-2 a img {
      height: 25rem;
  }
  
- .top-part .row-2 .books-slider a:hover img {
+ .top-part .row-2 .books-slider-2 a:hover img {
      transform: scale(.9%);
  }
  
- .top-part .row-2 .books-slider .stand {
+ .top-part .row-2 .books-slider-2 .stand {
      width: 100%;
      margin-top: -2rem;
  }
