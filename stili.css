@@ -447,19 +447,21 @@
  }
  
  .contact {
-     background-color: #e0caba;
+     background-color: var(--light-grey);
      width: 50%;
      border-radius: 14px 14px 0 0;
      margin: 0 auto;
      margin-bottom: 40px;
+     opacity: 0.8;
  }
  
  .f_contact {}
  
  .title_34 {
-     margin-left: 60px;
-     margin-top: 30px;
      width: 50%;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 30px;
  }
  
  .title_34 h3 {
@@ -512,8 +514,9 @@
  /**/
  
  .about {
-     background-color: #e0caba;
+     background-color: var(--light-grey);
      margin-top: -40px;
+     opacity: 0.8;
  }
  
  .info {
