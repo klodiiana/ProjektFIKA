@@ -482,6 +482,7 @@
      margin-left: 25px;
  }
  /*menu*/
+ 
  /*books*/
  
  .top-part {
@@ -497,7 +498,7 @@
      gap: 1.5rem;
  }
  
- .top-part .row .content {
+ .top-part .row .content-2 {
      flex: 1 1 42rem;
  }
  
@@ -520,13 +521,13 @@
      margin-top: -2rem;
  }
  
- .top-part .row .content h3 {
+ .top-part .row .content-2 h3 {
      color: var(--header-color1);
      font-size: 4.5rem;
      font-family: 'Open Sans Condensed', sans-serif;
  }
  
- .top-part .row .content p {
+ .top-part .row .content-2 p {
      color: var(--logo-color1);
      font-size: 1.4rem;
      line-height: 2;
@@ -540,10 +541,10 @@
  }
  
  @media(max-width: 768px) {
-     .top-part .row .content {
+     .top-part .row .content-2 {
          text-align: center;
      }
-     .top-part .row .content h3 {
+     .top-part .row .content-2 h3 {
          font-size: 3.5rem;
      }
  }
