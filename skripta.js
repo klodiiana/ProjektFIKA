@@ -24,12 +24,12 @@ new Swiper('.home-slider', {
 });
 
 var swiper = new Swiper(".books-slider", {
-  loop: true,
+  loop:true,
   centeredSlides: true,
-    autoplay: {
+  autoplay: {
       delay: 9500,
       disableOnInteraction: false,
-    },
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
