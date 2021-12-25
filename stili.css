@@ -200,7 +200,6 @@
      margin: 0 auto;
      padding-top: 20px;
  }
-
  /* what we offer*/
  
  .services {
@@ -278,11 +277,12 @@
  .menu-wrap {
      position: relative;
      color: #5f3725;
+     opacity: 0.8;
  }
  
  .title {
      background-color: white;
-     margin-top: 30px;
+     margin-top: 0;
  }
  
  .title h1 {
@@ -372,94 +372,163 @@
      margin-left: 25px;
  }
  /*menu*/
-
  /*books*/
-
-.top-part{
-    background: url(images/background-books.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.top-part .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.top-part .row .content{
-    flex: 1 1 42rem;
-}
-
-.top-part .row .books-slider{
-    flex: 1 1 42rem;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.top-part .row .books-slider a img{
-    height: 25rem;
-
-}
-
-.top-part .row .books-slider a:hover img{
-    transform: scale(.9%);
-}
-
-.top-part .row .books-slider .stand{
-    width: 100%;
-    margin-top: -2rem;
-}
-
-.top-part .row .content h3{
-    color: var(--header-color1);
-    font-size: 4.5rem;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.top-part .row .content p{
-    color: var(--logo-color1);
-    font-size: 1.4rem;
-    line-height: 2;
-    padding: 1rem 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- @media(max-width: 991px){
-
-     section .top-part{
+ 
+ .top-part {
+     background: url(images/background-books.jpg);
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .top-part .row {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+ }
+ 
+ .top-part .row .content {
+     flex: 1 1 42rem;
+ }
+ 
+ .top-part .row .books-slider {
+     flex: 1 1 42rem;
+     text-align: center;
+     margin-top: 2rem;
+ }
+ 
+ .top-part .row .books-slider a img {
+     height: 25rem;
+ }
+ 
+ .top-part .row .books-slider a:hover img {
+     transform: scale(.9%);
+ }
+ 
+ .top-part .row .books-slider .stand {
+     width: 100%;
+     margin-top: -2rem;
+ }
+ 
+ .top-part .row .content h3 {
+     color: var(--header-color1);
+     font-size: 4.5rem;
+     font-family: 'Open Sans Condensed', sans-serif;
+ }
+ 
+ .top-part .row .content p {
+     color: var(--logo-color1);
+     font-size: 1.4rem;
+     line-height: 2;
+     padding: 1rem 0;
+ }
+ 
+ @media(max-width: 991px) {
+     section .top-part {
          padding: 3rem 2rem;
      }
  }
-
- @media(max-width: 768px){
-
-    .top-part .row .content{
-        text-align: center;
-    }
-
-    .top-part .row .content h3{
-        font-size: 3.5rem;
-
-    }
+ 
+ @media(max-width: 768px) {
+     .top-part .row .content {
+         text-align: center;
+     }
+     .top-part .row .content h3 {
+         font-size: 3.5rem;
+     }
  }
+ /*contact us*/
+ 
+ .contact_section {
+     margin: 0;
+     padding: 0;
+     margin-top: -30px;
+     background-image: url(/images/cu-background.jpeg);
+ }
+ 
+ .contact {
+     background-color: #e0caba;
+     width: 50%;
+     border-radius: 14px 14px 0 0;
+     margin: 0 auto;
+     margin-bottom: 40px;
+ }
+ 
+ .f_contact {}
+ 
+ .title_34 {
+     margin-left: 60px;
+     margin-top: 30px;
+     width: 50%;
+ }
+ 
+ .title_34 h3 {
+     font-size: 30px;
+ }
+ 
+ .title_34 h4 {
+     font-size: larger;
+     margin-top: 20px;
+ }
+ 
+ .fieldset {
+     display: flexbox;
+     margin-left: 50px;
+     margin-right: 100px;
+     margin-top: 30px;
+     font-weight: 300;
+     font-size: 12px;
+     line-height: 30px;
+     color: #777;
+     background-color: #af7e68;
+     border-radius: 14px 14px 0 0;
+     text-align: center;
+ }
+ 
+ .fieldset input {
+     width: 400px;
+     height: 36px;
+     margin: 10px 10px;
+     border: 1px solid var(--black);
+     border-radius: 14px;
+ }
+ 
+ .fieldset textarea {
+     width: 400px;
+     margin: 10px 10px;
+     border: 1px solid var(--black);
+     border-radius: 14px;
+ }
+ 
+ .fieldset button {
+     width: 400px;
+     height: 40px;
+     border: 1px solid var(--black);
+     border-radius: 14px;
+     margin-bottom: 20px;
+     background-color: #e0caba;
+     margin: 0 auto;
+ }
+ /**/
+ 
+ .about {
+     background-color: #e0caba;
+     margin-top: -40px;
+ }
+ 
+ .info {
+     display: flexbox;
+     margin-left: 30px;
+ }
+ 
+ .info1 {
+     padding-top: 20px;
+ }
+ 
+ .info span {
+     color: #5f3725;
+     font-weight: bolder;
+     margin-bottom: 20px;
+     border-bottom: 1px solid #5f3725;
+ }
+ /*contact us*/
