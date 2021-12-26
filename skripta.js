@@ -15,6 +15,8 @@ document.querySelector('#close-login-btn').onclick = () => {
 }
 
 
+
+
 new Swiper('.home-slider', {
     loop: true,
     effect: "fade",
