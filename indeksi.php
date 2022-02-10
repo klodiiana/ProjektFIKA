@@ -45,11 +45,11 @@
 
       <div class="header-2">
         <nav class="nav-bar">
-          <a href="indeksi.html">Home</a>
-          <a href="menu.html">Menu</a>
-          <a href="books.html">Books</a>
-          <a href="contact-us.html">Contact Us</a>
-          <a href="account.html">Login</a>
+        <a href="indeksi.php">Home</a>
+                <a href="menu.php">Menu</a>
+                <a href="books.php">Books</a>
+                <a href="contact-us.php">Contact Us</a>
+                <a href="login.php">Logout</a>
         </nav>
       </div>
     </header>
