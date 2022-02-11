@@ -55,62 +55,17 @@
     <!--fillimi i contact us-->
 
     <section class="contact_section">
-      <div class="contact">
-        <form id="f_contact" action="contact-us.html">
-          <div class="title_34">
-            <h3>Get in touch!</h3>
+      <div class="about">
+      <div class="contact-text">
+        <div class="text">
+        <h3>Get in touch!</h3>
             <h4>
-              Contact us today, and get reply within 24 hours! We're happy to
+              Contact us today, email or text our number below and get a reply within 24 hours! We're happy to
               answer any questions you may have.
             </h4>
-          </div>
-          <div class="fieldset">
-            <fieldset>
-              <input
-                placeholder="Your name"
-                type="text"
-                tabindex="1"
-                required
-                autofocus
-              />
-            </fieldset>
-            <fieldset>
-              <input
-                placeholder="Your Email Address"
-                type="email"
-                tabindex="2"
-                required
-              />
-            </fieldset>
-            <fieldset>
-              <input
-                placeholder="Your Phone Number"
-                type="tel"
-                tabindex="3"
-                required
-              />
-            </fieldset>
-            <fieldset>
-              <textarea
-                placeholder="Type your Message Here...."
-                tabindex="5"
-                required
-              ></textarea>
-            </fieldset>
-            <fieldset>
-              <button
-                name="submit"
-                type="submit"
-                id="contact-submit"
-                data-submit="...Sending"
-              >
-                Submit
-              </button>
-            </fieldset>
-          </div>
-        </form>
+        </div>
+     
       </div>
-      <div class="about">
         <div class="info">
           <div class="info1">
             <span>Email</span> <br />

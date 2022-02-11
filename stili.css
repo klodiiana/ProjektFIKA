@@ -376,67 +376,30 @@ html {
   margin-top: -30px;
   background-image: url(/images/cu-background.jpeg);
 }
+.about .contact-text{
+  padding-top: 0px;
+  background-color:  #e5e5e5;
+}
+.about .contact-text .text{
+   text-align: center;
+   padding-bottom: 50pxs;
+}
+.about .contact-text .text h3{
+   font-weight: bold;
+   padding-top: 30px;
 
-.contact {
-  background-color: var(--light-grey);
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 40px;
 }
 
-.title_34 {
-  width: 50%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 30px;
-}
 
-.title_34 h3 {
-  font-size: 30px;
-}
 
-.title_34 h4 {
-  font-size: larger;
-  margin-top: 20px;
-}
 
-.fieldset {
-  display: flexbox;
-  margin-left: 50px;
-  margin-right: 100px;
-  margin-top: 30px;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 30px;
-  color: #777;
-  text-align: center;
-}
 
-.fieldset input {
-  width: 400px;
-  height: 36px;
-  margin: 10px 10px;
-  border: 1px solid var(--black);
-  border-radius: 14px;
-  margin-top: 20px;
-}
 
-.fieldset textarea {
-  width: 400px;
-  margin: 10px 10px;
-  border: 1px solid var(--black);
-  border-radius: 14px;
-}
 
-.fieldset button {
-  width: 400px;
-  height: 40px;
-  border: 1px solid var(--black);
-  border-radius: 14px;
-  background-color: #e0caba;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
+
+
+
+
 
 /**/
 
@@ -674,5 +637,14 @@ html {
 }
 
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
+  *{
+      overflow-x: hidden;
+  }
+   .logo span{
+       display: none;
+   }
+   .search-form{
+       width: 190px !important;
+   }
 }
