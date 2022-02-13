@@ -1,3 +1,11 @@
+<?php 
+include('functions.php');
+if (!isLoggedIn()) {
+	$_SESSION['msg'] = "You must log in first";
+	header('location: login.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,18 +14,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIKA - Book Coffe Shop</title>
 
-    <!--linku per font style-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <!--Linku per Font Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
-    <!--linku per pjesen e css-->
-    <link rel="stylesheet" href="stili.css" />
+    <!--Linku per CSS File-->
+    <link rel="stylesheet" href="stili.css?v=<?php echo time(); ?>">
   </head>
 
   <body>
-    <!--fillimi i header section-->
+    <!--Header Section starts-->
     <header class="header">
       <div class="header-1">
         <a href="#" class="logo">
@@ -26,35 +31,33 @@
         </a>
 
         <form action="" class="search-form">
-          <input
-            type="search"
-            name=""
-            placeholder="Search here.."
-            id="search-box"
-          />
+          <input type="search" name="" placeholder="Search Here" id="search-box" />
           <label for="search-box" class="fas fa-search"></label>
         </form>
 
         <div class="icons">
           <div id="search-btn" class="fas fa-search"></div>
         </div>
+
       </div>
 
       <div class="header-2">
         <nav class="nav-bar">
-                <a href="indeksi.php">Home</a>
-                <a href="menu.php">Menu</a>
-                <a href="books.php">Books</a>
-                <a href="contact-us.php">Contact Us</a>
-                <a href="login.php">Logout</a>
+          <a href="indeksi.php">Home</a>
+          <a href="menu.php">Menu</a>
+          <a href="books.php">Books</a>
+          <a href="contact-us.php">Contact Us</a>
+          <a href="login.php">Logout</a>
         </nav>
       </div>
-    </header>
-    <!--mbarimi i header section-->
 
-    <!--fillimi i contact us-->
+    </header>
+    <!--Header Section ends-->
+
+    <!--Contact Us Section starts-->
 
     <section class="contact_section">
+
       <div class="about">
       <div class="contact-text">
         <div class="text">
@@ -64,8 +67,8 @@
               answer any questions you may have.
             </h4>
         </div>
-     
       </div>
+
         <div class="info">
           <div class="info1">
             <span>Email</span> <br />
@@ -83,19 +86,16 @@
             <p>Rruga Tirana, Prizren, 20000, Kosovë</p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94546.59386408077!2d20.664557824412178!3d42.22339779580203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353950a12f4301f%3A0xda0e2e9b8d3d5850!2sPrizren!5e0!3m2!1sen!2sch!4v1640382400518!5m2!1sen!2sch"
-              width="100%"
-              height="300"
-              id="map"
-              allowfullscreen=""
-              loading="lazy"
+              width="100%" height="300" id="map" allowfullscreen="" loading="lazy"
             ></iframe>
           </div>
         </div>
       </div>
-    </section>
-    <!--mbarimi i contact us-->
 
-    <!--Footer section-->
+    </section>
+    <!--Contact Us Section ends-->
+
+    <!--Footer Section starts-->
     <footer class="site-footer">
       <div class="f--container">
         <div class="row">
@@ -122,34 +122,20 @@
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li>
-                <a class="facebook" href="https://www.facebook.com/"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-              </li>
-              <li>
-                <a class="twitter" href="https://www.twitter.com/"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a class="instagram" href="https://www.instagram.com/"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a class="linkedin" href="https://www.linkedin.com/"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
+              <li><a class="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div>
+
         </div>
       </div>
     </footer>
-    <!--Footer section-->
+    <!--Footer Section ends-->
 
-    <!--linku per pjesen e javascript-->
+    <!--Linku per JS File-->
     <script src="skripta.js"></script>
+    
   </body>
 </html>

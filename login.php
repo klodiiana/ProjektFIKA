@@ -1,8 +1,4 @@
-<?php 
-include_once 'loginController.php';
-include_once 'registerController.php';
-
-?>
+<?php include('functions.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,19 +7,20 @@ include_once 'registerController.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script
-      src="https://kit.fontawesome.com/dada163284.js" crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/dada163284.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>Login</title>
 
-    <link rel="stylesheet" href="account.css" />
+    <!--Linku per CSS File-->
+    <link rel="stylesheet" href="account.css?v=<?php echo time(); ?>">
   </head>
+
   <body>
     <div class="container">
       <div class="container-form">
         <div class="login-signup">
-          <form action="<?= $_SERVER['PHP_SELF']?>" method="post" class="login-form">
+
+          <form action="login.php" method="post" class="login-form">
             <h2 class="title" style="font-family: 'Poppins', sans-serif;">Log in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -33,40 +30,33 @@ include_once 'registerController.php';
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" name="password" pattern="^[A-Z]+[a-zA-Z]*\d{3}$" required/>
             </div>
-            <input type="submit" value="Login" name="loginBtn" class="btn solid" />
-
-            
-
-           
+            <input type="submit" value="Login" name="login_btn" class="btn solid" />
           </form>
 
-          <form action="<?= $_SERVER['PHP_SELF']?>" method="post" class="sign-up-form">
+          <form action="login.php" method="post" class="sign-up-form">
             <h2 class="title" style="font-family: 'Poppins', sans-serif;">Sign Up</h2>
+
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="name" placeholder="name..." value="<?=$name?>" style="text-transform:capitalize" required/>
+              <input type="text" name="username" placeholder="Username" value="<?php echo $username; ?>" pattern=".{8,15}" required />
             </div>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" name="surname" placeholder="surname..." value="<?=$surname?>" style="text-transform: capitalize;" required/>
-            </div>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" name="username" placeholder="username..." value="<?=$username?>" pattern=".{8,15}" required />
-            </div>
+
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email"  name="email" placeholder="email..." value="<?=$email?>" required/>
+              <input type="email"  name="email" placeholder="Email" value="<?php echo $email; ?>" required/>
             </div>
+
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" name="password" placeholder="password..." value="<?=$password?>" pattern="^[A-Z]+[a-zA-Z]*\d{3}$" style="text-transform: capitalize" required/>
+              <input type="password" name="password_1" placeholder="Password"  pattern="^[A-Z]+[a-zA-Z]*\d{3}$" style="text-transform: capitalize" autocomplete="off" required/>
             </div>
-            <input type="submit" value="register" name="registerBtn" class="btn solid" />
 
-            
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="password_2" placeholder="Confirm password"  pattern="^[A-Z]+[a-zA-Z]*\d{3}$" style="text-transform: capitalize" required/>
+            </div>
 
-           
+            <input type="submit" value="register" name="register_btn" class="btn solid" />
           </form>
         </div>
       </div>
@@ -93,10 +83,8 @@ include_once 'registerController.php';
       </div>
     </div>
 
+    <!--Linku per JS File-->
     <script src="account.js"></script>
-
-
-  
 </body>
 </html>
 
