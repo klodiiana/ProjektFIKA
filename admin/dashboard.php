@@ -93,11 +93,10 @@ body{
 
 <body>
 	<div class="header">
-		<h2>Admin - Home Page</h2>
+		<h2>DASHBOARD</h2>
 	</div>
-
 	<div class="content">
-		<!-- Notification Message -->
+		<!-- notification message -->
 		<?php if (isset($_SESSION['success'])) : ?>
 			<div class="error success" >
 				<h3>
@@ -109,23 +108,24 @@ body{
 			</div>
 		<?php endif ?>
 
-		<!-- Logged in user information -->
+		<!-- logged in user information -->
 		<div class="profile_info">
 			
-			<div>
+
+			<div class="content-2">
 				<?php  if (isset($_SESSION['user'])) : ?>
 					<strong><?php echo $_SESSION['user']['username']; ?></strong>
 
-					<small>
+					
 						<i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
 						<br>
-						<a href="dashboard.php?logout='1'" style="color: red;">logout</a>
-                       &nbsp; <a href="create_user.php"> + add user</a>
-					</small>
+						<a href="../indeksi.php" class="check">Check the website!</a>
+						<a href="dashboard.php?logout='1'" class="logout">logout</a>
+                        <a href="create_user.php" class="adduser"> + add user</a>
+				
 
 				<?php endif ?>
 			</div>
-            
 		</div>
 	</div>
 </body>
