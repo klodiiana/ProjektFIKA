@@ -4,7 +4,7 @@
 <html>
 <head>
 	<title>Registration system PHP and MySQL - Create user</title>
-	<link rel="stylesheet" type="text/css" href="../stili.css">
+	
 	<style>
 
 		*{

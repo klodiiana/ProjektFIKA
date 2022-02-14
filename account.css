@@ -246,6 +246,8 @@ form.sign-up-form {
   pointer-events: all;
 }
 
+/*Responsive Section */
+
 @media (max-width: 870px) {
   .container {
     min-height: 800px;

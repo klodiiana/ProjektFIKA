@@ -15,9 +15,7 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
-    
-	<link rel="stylesheet" type="text/css" href="../stili.css">
+	<title>Dashboard</title>
 
     <style>
 
@@ -96,7 +94,7 @@ body{
 		<h2>DASHBOARD</h2>
 	</div>
 	<div class="content">
-		<!-- notification message -->
+		<!-- Notification message -->
 		<?php if (isset($_SESSION['success'])) : ?>
 			<div class="error success" >
 				<h3>
@@ -108,7 +106,7 @@ body{
 			</div>
 		<?php endif ?>
 
-		<!-- logged in user information -->
+		<!-- Logged in user information -->
 		<div class="profile_info">
 			
 
