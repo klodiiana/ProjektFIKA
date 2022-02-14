@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
 :root {
   --light-cream: #b6865f;
   --dark-cream: #8d684a;
@@ -192,7 +193,7 @@ html {
   padding-top: 20px;
 }
 
-/* what we offer*/
+/* What We Offer Section starts*/
 
 .services {
   width: 100%;
@@ -253,11 +254,9 @@ html {
 .whatweoffer:hover i {
   color: #fff;
 }
+/* What We Offer Section ends*/
 
-/*============================*/
-
-/*menu*/
-
+/*Menu Section starts*/
 .section-1 {
   margin: 0;
   padding: 0;
@@ -365,11 +364,9 @@ html {
   text-align: left;
   margin-left: 25px;
 }
+/*Menu Section ends*/
 
-/*menu*/
-
-/*contact us*/
-
+/*Contact Us Section starts*/
 .contact_section {
   margin: 0;
   padding: 0;
@@ -447,11 +444,9 @@ html {
   margin-right: 0 auto;
   border: 1px solid var(--header-color2);
 }
+/*Contact Us Section ends*/
 
-/*contact us*/
-
-/*footer*/
-
+/*Footer Section starts*/
 .site-footer {
   background-color: var(--header-color2);
   padding: 45px 0 20px;
@@ -606,10 +601,9 @@ html {
     font-weight: 600;
   }
 }
+/*Footer Section ends*/
 
-/*footer*/
-
-/* RESPONSIVE */
+/* Responsive Section starts */
 @media (min-width: 1200px) {
 }
 
@@ -648,3 +642,4 @@ html {
        width: 190px !important;
    }
 }
+/*Responsive Section ends*/
