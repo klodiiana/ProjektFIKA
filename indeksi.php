@@ -50,7 +50,6 @@ if (!isLoggedIn()) {
           <a href="menu.php">Menu</a>
           <a href="books.php">Books</a>
           <a href="contact-us.php">Contact Us</a>
-          <a href="login.php">Logout</a>
           <a href="indeksi.php?logout='1'">Logout</a>
         </nav>
       </div>
